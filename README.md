@@ -46,6 +46,16 @@ A true 50 Gbps network cannot be created by a phone alone or by Termux alone. It
   3. chmod +x ~/complete_termux_setup.sh
   4. ~/complete_termux_setup.sh
 
+## Can work smartest termux workflows
+1. pkg update -y
+2. pkg install -y git curl wget openssh
+3. git clone https://github.com/ginbesse/Agogar.git ~/agogar
+4. cd ~/agogar
+5. bash scripts/complete_termux_setup.sh
+
+## Test Command
+agogar-info
+agogar-speed-test 192.168.50.10
 
 ## Speed validation commands
 On the server:
