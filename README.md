@@ -33,6 +33,20 @@ A true 50 Gbps network cannot be created by a phone alone or by Termux alone. It
 5. Use iperf3 for end-to-end speed tests.
 6. Use Termux only for monitoring and testing, not as the network engine.
 
+## Work & Termux workflows
+  1. pkg update -y
+  2. pkg install -y git
+  3. git clone https://github.com/ginbesse/Agogar.git
+  4. cd agogar
+  5. bash scripts/complete_termux_setup.sh
+ 
+  ## The simplest method
+  1. termux-setup-storage
+  2. cp /sdcard/Download/complete_termux_setup.sh ~/complete_termux_setup.sh
+  3. chmod +x ~/complete_termux_setup.sh
+  4. ~/complete_termux_setup.sh
+
+
 ## Speed validation commands
 On the server:
 ```bash
